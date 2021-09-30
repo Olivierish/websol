@@ -147,6 +147,10 @@ header .toggle.active {
   transition: 0.5s;
 }
 
+.sidebar.active {
+  right: 0;
+}
+
 .sidebar ul {
   position: relative;
   display: -webkit-box;
@@ -174,7 +178,44 @@ header .toggle.active {
   color: #ffb765;
 }
 
-.sidebar.active {
-  right: 0;
+.about {
+  position: relative;
+  width: 100%;
+  background-color: #c84355;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .contentBox {
+  background-color: #c84355;
+  padding: 100px;
+  width: 50%;
+}
+
+.about .contentBox .heading {
+  position: relative;
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about .contentBox .text {
+  position: relative;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.about .imgBox {
+  position: relative;
+  width: 50%;
+  background-image: url(images/meeting.jpg);
+  background-size: cover;
+  background-position: right;
 }
 /*# sourceMappingURL=main-style.css.map */

@@ -2,6 +2,9 @@
 $pupple-bg : #4f3ca7;
 $gold: #dabdb2;
 $gold-medium: #ffb765;
+$orange: #c84355;
+$choco: #391f2a;
+$green: #94a73c;
 *{
     margin: 0;
     padding: 0;
@@ -113,6 +116,10 @@ header{
     z-index: 3;
     transition: 0.5s;
 
+    &.active{
+        right: 0;
+    }
+
     ul{
         position: relative;
         display: flex;
@@ -134,7 +141,45 @@ header{
             }
         }
     }
-    &.active{
-        right: 0;
+}
+.about{
+    position: relative;
+    width: 100%;
+    background-color: $orange;
+    //background-color: $choco;
+    // background-color: $green;
+    color: white;
+    display: flex;
+
+    .contentBox{
+        background-color: $orange;
+        padding: 100px;
+        width: 50%;
+
+        .heading{
+            position: relative;
+            color: white;
+            font-size: 3em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .text{
+            position:relative;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+    .imgBox{
+        position: relative;
+        width: 50%;
+        background-image: url(images/meeting.jpg);
+        background-size: cover;
+        background-position: right;
     }
 }
+
+
+
