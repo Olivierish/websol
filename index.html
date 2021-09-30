@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websol - Web Solution</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
 </head>
 <body>
-    
+    <main>
+        <header>
+            <a href="#" class="logo"> &lt; Websol <span>/</span>&gt;</a>
+            <div class="toggle" onclick="toggleClassName();"></div>
+        </header>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <!-- <img src="images/Manhattan2.jpg" alt=""> -->
+            <img src="images/newyork.jpg" alt="">
+            <!-- <img src="images/Manhattan.jpg" alt=""> -->
+            <!-- <img src="images/city-lights.jpg" alt=""> -->
+            <div class="content">
+                <h2>YOUR DIGITAL FUTURE WELL BUILT</h2>
+                <h3>We are Websol</h3>
+                <p>
+                    We design and develop digital products and online experiences that help our clients grow, innovate, and transform. We listen, learn and understand before we build. We identify your goals together, then use our expertise to find that sweet spot of realistic and impactful.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleClassName(){
+            var sidebar = document.querySelector('.sidebar');
+            var wrapper = document.getElementsByTagName("main");
+            var toggle = document.querySelector('.toggle');
+            sidebar.classList.toggle('active');
+            wrapper[0].classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
