@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+$pupple-bg : #4f3ca7;
+$gold: #dabdb2;
+$gold-medium: #ffb765;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #4f3ca7;
+}
+main{
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    &.active{
+        left: -400px;
+    }
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+    .logo{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        span{
+            font-size: .8em;
+        }
+    }
+    .toggle{
+        position: relative;
+        width: 36px;
+        height: 28px;
+        background: url('images/toggle.png');
+        background-size: cover;
+        cursor: pointer;
+
+        &.active{
+            background: url('images/close.png');
+            background-size: cover;
+        }
+    }
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: $pupple-bg, $alpha: 1.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .2;
+    }
+    .content{
+        position: relative;
+        max-width: 750px;
+        text-align: center;
+
+        h2{
+            font-size: 3em;
+            color: white;
+        }
+        h3{
+            font-size: 1.5em;
+            color: white;
+        }
+        p{
+            font-size: 1.2em;
+            color: white;
+        }
+    }
+}
+.sidebar{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color:$pupple-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    transition: 0.5s;
+
+    ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        li{
+            list-style: none;
+            margin: 5px 0;
+
+            a{
+                color: white;
+                font-size: 1.5em;
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover{
+                    color: $gold-medium;
+                }
+            }
+        }
+    }
+    &.active{
+        right: 0;
+    }
+}

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  background-color: #4f3ca7;
+}
+
+main {
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main.active {
+  left: -400px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+header .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .logo span {
+  font-size: .8em;
+}
+
+header .toggle {
+  position: relative;
+  width: 36px;
+  height: 28px;
+  background: url("images/toggle.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+header .toggle.active {
+  background: url("images/close.png");
+  background-size: cover;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #4f3ca7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .2;
+}
+
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 3em;
+  color: white;
+}
+
+.banner .content h3 {
+  font-size: 1.5em;
+  color: white;
+}
+
+.banner .content p {
+  font-size: 1.2em;
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #4f3ca7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #ffb765;
+}
+
+.sidebar.active {
+  right: 0;
+}
+/*# sourceMappingURL=main-style.css.map */
