@@ -47,6 +47,10 @@
             wrapper[0].classList.toggle('active');
             toggle.classList.toggle('active');
         }
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
     </script>
 </body>
 </html>

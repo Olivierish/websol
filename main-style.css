@@ -9,6 +9,7 @@
 
 body {
   background-color: #4f3ca7;
+  height: 1500px;
 }
 
 main {
@@ -38,6 +39,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header.sticky {
+  padding: 20px 100px;
+  background-color: #4f3ca7;
 }
 
 header .logo {

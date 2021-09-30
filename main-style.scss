@@ -10,6 +10,7 @@ $gold-medium: #ffb765;
 }
 body{
     background-color: #4f3ca7;
+    height: 1500px;
 }
 main{
     position: relative;
@@ -29,6 +30,12 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    transition: 0.5s;
+
+    &.sticky{
+        padding: 20px 100px;
+        background-color: $pupple-bg;
+    }
 
     .logo{
         color: white;
