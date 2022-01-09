@@ -181,7 +181,7 @@ header .toggle.active {
 .about {
   position: relative;
   width: 100%;
-  background-color: #c84355;
+  background-color: #ff5a5f;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,7 +189,6 @@ header .toggle.active {
 }
 
 .about .contentBox {
-  background-color: #c84355;
   padding: 100px;
   width: 50%;
 }
@@ -197,10 +196,11 @@ header .toggle.active {
 .about .contentBox .heading {
   position: relative;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .about .contentBox .text {
@@ -217,5 +217,73 @@ header .toggle.active {
   background-image: url(images/meeting.jpg);
   background-size: cover;
   background-position: right;
+}
+
+.services {
+  position: relative;
+  background-color: #ececec;
+  text-align: center;
+  padding: 100px;
+}
+
+.services .container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+}
+
+.services .heading {
+  position: relative;
+  color: #087e8b;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.services .serviceBox {
+  position: relative;
+  min-width: 300px;
+  height: 350px;
+  background-color: #087e8b;
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.services .serviceBox img {
+  -webkit-filter: invert(0.9);
+          filter: invert(0.9);
+  height: 100px;
+  width: 100px;
+}
+
+.services .serviceBox h3 {
+  text-transform: uppercase;
+  color: white;
+  margin: 10px 0;
+}
+
+.services .serviceBox ul {
+  list-style-type: none;
+}
+
+.services .serviceBox ul li {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: whitesmoke;
+  text-align: center;
 }
 /*# sourceMappingURL=main-style.css.map */
