@@ -35,17 +35,22 @@
       <!-- Sidebar -->
       <div class="sidebar">
         <ul>
-          <li><a href="#">HomeHome</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home" onclick="toggleClassName();">Home</a></li>
+          <li><a href="#about" onclick="toggleClassName();">About</a></li>
+          <li><a href="#services" onclick="toggleClassName();">Services</a></li>
+          <li><a href="#projects" onclick="toggleClassName();">Projects</a></li>
+          <li><a href="#clients" onclick="toggleClassName();">Clients</a></li>
+          <li>
+            <a href="#testimonials" onclick="toggleClassName();"
+              >Testimonials</a
+            >
+          </li>
+          <li><a href="#team" onclick="toggleClassName();">Team</a></li>
+          <li><a href="#contact" onclick="toggleClassName();">Contact</a></li>
         </ul>
       </div>
       <!-- Banner -->
-      <div class="banner">
+      <div class="banner" id="home">
         <!-- <img src="images/Manhattan2.jpg" alt=""> -->
         <img src="images/newyork.jpg" alt="the banner background image" />
         <!-- <img src="images/Manhattan.jpg" alt=""> -->
@@ -63,7 +68,7 @@
         </div>
       </div>
       <!-- About us -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="contentBox">
           <h2 class="heading">About Us</h2>
           <p class="text">
@@ -78,7 +83,8 @@
         </div>
         <div class="imgBox"></div>
       </section>
-      <section class="services">
+      <!-- Services -->
+      <section class="services" id="services">
         <h2 class="heading">Our Services</h2>
         <div class="container">
           <div class="serviceBox">
@@ -119,7 +125,275 @@
           </div>
         </div>
       </section>
-      <section>Hello</section>
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="project">
+          <div class="imgBox">
+            <img
+              src="images/projects/italian-restaurant-website.jpg"
+              alt="italian restaurant website"
+            />
+          </div>
+          <div class="contentBox">
+            <h2 class="heading">Meastro Italiano restaurant</h2>
+            <p class="text">
+              asked us : <span>"WE NEED TO INNOVATE. WHAT NOW?"</span>
+              Our favorite question. When you know what you want, but not what
+              you want, we go all-in to uncover the strategies that will get
+              your business where you want it to go.
+            </p>
+            <p class="services-provided">
+              Back End Development / Dev Ops / Digital Product Strategy / Front
+              End Development / Systems design / Web Application Development
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="imgBox">
+            <img src="images/projects/dance-school.jpg" alt="dance-school" />
+          </div>
+          <div class="contentBox">
+            <h2 class="heading">Dance school</h2>
+            <p class="text">
+              Wanted to know :
+              <span>"CAN YOU MAKE US A NEW WEBSITE?"</span>
+              When it comes to digital experiences, we can build pretty much
+              anything. And if there’s a better solution, we’ll tell you. We
+              always start with: Why? and use the answer to drive real growth
+              and meaningful transformation.
+            </p>
+            <p class="services-provided">
+              Back End Development / Dev Ops / Digital Product Strategy / Front
+              End Development / Innovation Strategy / Systems design / UX/UI
+              Design / Web Application Development
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="imgBox">
+            <img
+              src="images/projects/stripe-clothing.png"
+              alt="stripe clothing mockup"
+            />
+          </div>
+          <div class="contentBox">
+            <h2 class="heading">Stripe Clothing</h2>
+            <p class="text">
+              Wondered :
+              <span>"HOW LONG WILL THIS TAKE?"</span>
+              The truth is, it depends. We typically host a few discovery
+              workshops, followed by a series of sprints from proof of concept
+              to production-ready. We’re agile, so you will be too.
+            </p>
+            <p class="services-provided">
+              Back End Development / Dev Ops / Digital Product Strategy /
+              Enterprise System Development / Front End Development / Innovation
+              Strategy / UX/UI Design / Web Application Development / Website
+              Design
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Our Clients -->
+      <section class="clients" id="clients">
+        <h2 class="heading">Our Clients</h2>
+        <p class="text">
+          <q>We take a client first approach to all that we do.</q>
+        </p>
+        <p class="text">
+          Good client fit is important to us. In order to forge the best
+          relationships, we like to take some time to get to know you. It’s part
+          of our process. Our collaborative approach means that we forge a
+          working partnership that ensures we are on the same page and working
+          together to achieve your objectives.
+        </p>
+        <div class="imgBox">
+          <img src="images/brand1.png" alt="brand1" />
+          <img src="images/brand2.png" alt="brand2" />
+          <img src="images/brand3.png" alt="brand3" />
+          <img src="images/brand4.png" alt="brand4" />
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section class="testimonials" id="testimonials">
+        <h2 class="heading">What our client says</h2>
+        <div class="container">
+          <div class="contentBox">
+            <div>
+              <p class="text">
+                <q>
+                  BILBERRRY DID A REALLY GOOD JOB OF HELPING US FIGURE OUT OUR
+                  ACTUAL PROBLEM AND THE BEST WAY TO SOLVE IT.
+                </q>
+              </p>
+             
+              <h3>Kylie Story, Project Manager</h3>
+            </div>
+          </div>
+          <div class="contentBox">
+            <div>
+              <p class="text">
+                <q>
+                  IN 18 YEARS OF WORKING WITH MANY WEB SOLUTIONS COMPANIES, I
+                  NEVER FOUND AN ORGANIZATION THAT WAS AS EFFECTIVE AS THEY ARE.
+                </q>
+              </p>
+             
+              <h3>Charlie Bresler, Executive Director</h3>
+            </div>
+          </div>
+          <div class="contentBox">
+            <div>
+              <p class="text">
+                <q>
+                  THERE HASN’T BEEN A SINGLE THING WE’VE ASKED OF THEM THAT THEY
+                  SAID THEY COULDN’T BUILD, WHICH IS INCREDIBLE. THEY’LL TELL US
+                  HOW MANY DEVELOPERS IT WILL TAKE, AND THE COST.
+                </q>
+              </p>
+              
+              <h3>Nevin Shetty, CEO</h3>
+            </div>
+          </div>
+          <div class="contentBox">
+            <div>
+              <p class="text">
+                <q>
+                  THEY WERE REALLY WILLING AND COMMITTED TO HAVING THAT
+                  UNDERSTANDING, AND HAVING THEIR FRESH, OUTSIDE PERSPECTIVE WAS
+                  CRITICAL TO OUR WEBSITE OVERHAUL.
+                </q>
+              </p>
+              <h3>Laura Stanworth, Deputy Director</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team -->
+      <section class="team" id="team">
+        <h2 class="heading">Our Team</h2>
+        <div class="container">
+          <div class="teamBox">
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/1.jpg" alt="paul" />
+              </div>
+              <div class="content">
+                <h3>
+                  Adele Hino <br />
+                  <span>CEO & Founder</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="teamBox">
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/2.jpg" alt="paul" />
+              </div>
+              <div class="content">
+                <h3>
+                  Petrus Vinkel <br />
+                  <span>CTO</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="teamBox">
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/3.jpg" alt="paul" />
+              </div>
+              <div class="content">
+                <h3>
+                  Pierre Dumas <br />
+                  <span>Director, Product Strategy</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="teamBox">
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/4.jpg" alt="paul" />
+              </div>
+              <div class="content">
+                <h3>
+                  Maria Costa <br />
+                  <span>HR director</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div>
+          <h2 class="heading">Contact Us</h2>
+          <p class="text">
+            Provide us with some information on your vision and we’ll get back
+            to in a few hours, we promise.
+          </p>
+        </div>
+      </section>
+      <section class="contact-form">
+        <div class="contentBox">
+          <div class="form">
+            <div class="inputBox">
+              <input type="text" name="" placeholder="Full Name" />
+            </div>
+            <div class="inputBox">
+              <input type="email" name="" placeholder="Email Address" />
+            </div>
+            <div class="inputBox">
+              <input type="tel" name="" placeholder="Mobile number" />
+            </div>
+            <div class="inputBox">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" />
+            </div>
+          </div>
+        </div>
+        <div class="imgBox2">
+          <img src="images/contact.svg" alt="Contact" />
+        </div>
+      </section>
+      <footer>
+        <p class="text">Designed and Developed By Olivieris</p>
+        <ul>
+          <p class="text">Follow us on :</p>
+          <li>
+            <a href="#" rel="noopener noreferrer"
+              ><img src="images/facebook.png" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#" rel="noopener noreferrer"
+              ><img src="images/twitter.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#" rel="noopener noreferrer"
+              ><img src="images/linkedin.png" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+      <!-- 
+            Commit
+            - added footer
+            - connected links from the sidevat
+            - smooth scroll
+         -->
     </main>
     <script>
       function toggleClassName() {

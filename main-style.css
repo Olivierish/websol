@@ -4,7 +4,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -44,7 +45,7 @@ header {
 }
 
 header.sticky {
-  padding: 20px 100px;
+  padding: 20px 50px;
   background-color: #4f3ca7;
 }
 
@@ -57,7 +58,7 @@ header .logo {
 }
 
 header .logo span {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 header .toggle {
@@ -98,7 +99,7 @@ header .toggle.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .banner .content {
@@ -231,8 +232,9 @@ header .toggle.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -243,10 +245,9 @@ header .toggle.active {
 
 .services .heading {
   position: relative;
-  color: #087e8b;
+  color: #3d3d3d;
   font-size: 2em;
   font-weight: 600;
-  letter-spacing: 1px;
   margin-bottom: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -254,13 +255,30 @@ header .toggle.active {
 .services .serviceBox {
   position: relative;
   min-width: 300px;
-  height: 350px;
+  height: 320px;
   background-color: #087e8b;
   padding: 40px 20px;
   margin: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.services .serviceBox div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .services .serviceBox img {
@@ -271,19 +289,518 @@ header .toggle.active {
 }
 
 .services .serviceBox h3 {
+  font-size: 1.2em;
   text-transform: uppercase;
   color: white;
   margin: 10px 0;
 }
 
 .services .serviceBox ul {
-  list-style-type: none;
+  list-style-type: disc;
 }
 
 .services .serviceBox ul li {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
   color: whitesmoke;
+  text-align: left;
+}
+
+.projects {
+  position: relative;
+  background: #f5f5f5;
+  width: 100%;
+  padding: 100px;
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+.projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #9c9c9c;
+}
+
+.projects .project .contentBox {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.projects .project .contentBox .heading {
+  color: #3d3d3d;
+}
+
+.projects .project .contentBox .text {
+  color: #3d3d3d;
+}
+
+.projects .project .contentBox .text span {
+  color: #087e8b;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.projects .project .contentBox .services-provided {
+  padding-top: 20px;
+  color: #747474;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.projects .project .imgBox {
+  position: relative;
+  width: 50%;
+}
+
+.projects .project .imgBox img {
+  width: 100%;
+}
+
+.clients {
+  position: relative;
+  padding: 100px;
   text-align: center;
+}
+
+.clients .heading {
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.clients .text {
+  color: white;
+}
+
+.clients .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.clients .imgBox img {
+  display: inline-block;
+  position: relative;
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.clients .imgBox img:hover {
+  opacity: 0.9;
+}
+
+.testimonials {
+  position: relative;
+  padding: 100px;
+  background-color: #ff5a5f;
+  text-align: center;
+}
+
+.testimonials .heading {
+  color: white;
+}
+
+.testimonials .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonials .container .contentBox {
+  position: relative;
+  background-color: white;
+  padding: 60px 50px;
+  margin: 10px;
+  width: 540px;
+  text-align: left;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .container .contentBox div .text {
+  margin-bottom: 10px;
+  color: #3d3d3d;
+}
+
+.testimonials .container .contentBox h3 {
+  width: 100%;
+  text-align: right;
+  font-weight: 500;
+  color: #4f3ca7;
+}
+
+.team {
+  position: relative;
+  padding: 100px 100px 100px;
+  background: #087e8b;
+  text-align: center;
+}
+
+.team .heading {
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.team .text {
+  color: white;
+}
+
+.team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .container .teamBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team .container .teamBox .box {
+  margin: 0 10px;
+  width: 260px;
+  padding: 5px;
+  background-color: white;
+}
+
+.team .container .teamBox .box .imgBox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.377);
+          box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.377);
+}
+
+.team .container .teamBox .box .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .container .teamBox .box .content {
+  padding: 15px 0;
+}
+
+.team .container .teamBox .box .content h3 {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #4f3ca7;
+}
+
+.team .container .teamBox .box .content h3 span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  color: #3d3d3d;
+}
+
+.contact {
+  position: relative;
+  padding: 50px 100px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #3d3d3d;
+}
+
+.contact-form {
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact-form .imgBox2 {
+  position: relative;
+  width: 50%;
+  height: auto;
+  background-size: cover;
+  background-position: right;
+}
+
+.contact-form .contentBox {
+  padding: 0 50px;
+  width: 50%;
+}
+
+.contact-form .contentBox .form {
+  position: relative;
+  text-align: center;
+}
+
+.contact-form .contentBox .form .inputBox {
+  margin-bottom: 40px;
+}
+
+.contact-form .contentBox .form .inputBox input,
+.contact-form .contentBox .form .inputBox textarea {
+  width: 100%;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #3d3d3d;
+  border-bottom: 2px solid #5a5a5a;
+}
+
+.contact-form .contentBox .form .inputBox input::-webkit-input-placeholder, .contact-form .contentBox .form .inputBox input::-webkit-input-placeholder,
+.contact-form .contentBox .form .inputBox textarea::-webkit-input-placeholder,
+.contact-form .contentBox .form .inputBox textarea::-webkit-input-placeholder {
+  color: #3d3d3d;
+  opacity: 0.5;
+}
+
+.contact-form .contentBox .form .inputBox input:-ms-input-placeholder, .contact-form .contentBox .form .inputBox input:-ms-input-placeholder,
+.contact-form .contentBox .form .inputBox textarea:-ms-input-placeholder,
+.contact-form .contentBox .form .inputBox textarea:-ms-input-placeholder {
+  color: #3d3d3d;
+  opacity: 0.5;
+}
+
+.contact-form .contentBox .form .inputBox input::-ms-input-placeholder, .contact-form .contentBox .form .inputBox input::-ms-input-placeholder,
+.contact-form .contentBox .form .inputBox textarea::-ms-input-placeholder,
+.contact-form .contentBox .form .inputBox textarea::-ms-input-placeholder {
+  color: #3d3d3d;
+  opacity: 0.5;
+}
+
+.contact-form .contentBox .form .inputBox input::placeholder, .contact-form .contentBox .form .inputBox input::placeholder,
+.contact-form .contentBox .form .inputBox textarea::placeholder,
+.contact-form .contentBox .form .inputBox textarea::placeholder {
+  color: #3d3d3d;
+  opacity: 0.5;
+}
+
+.contact-form .contentBox .form .inputBox input textarea,
+.contact-form .contentBox .form .inputBox textarea textarea {
+  min-height: 150px;
+}
+
+.contact-form .contentBox .form .inputBox input[type="submit"] {
+  width: 150px;
+  background: #3d3d3d;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-form .contentBox .form .inputBox input[type="submit"]:hover {
+  background: #9c9c9c;
+  color: white;
+}
+
+footer {
+  position: relative;
+  background-color: #4f3ca7;
+  padding: 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #cccccc;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a img {
+  max-width: 20px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px 50px;
+  }
+  header.sticky {
+    padding: 20px 50px;
+  }
+  .banner {
+    padding: 100px 50px;
+  }
+  .about .contentBox {
+    width: 100%;
+    padding: 100px 50px;
+  }
+  .about .imgBox {
+    display: none;
+  }
+  .services {
+    padding: 100px 50px;
+  }
+  .services .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects {
+    padding: 100px 50px;
+  }
+  .projects .project {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .project .contentBox,
+  .projects .project .imgBox {
+    width: 100%;
+    padding: 0;
+  }
+  .projects .project .contentBox {
+    margin-top: 20px;
+  }
+  .clients {
+    padding: 100px 50px;
+  }
+  .clients .imgBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonials {
+    padding: 100px 50px;
+  }
+  .testimonials .container {
+    margin: 0;
+  }
+  .testimonials .container .contentBox {
+    margin: 20px 0;
+    padding: 30px 20px;
+  }
+  .testimonials .container .contentBox div .text {
+    font-size: 0.8em;
+  }
+  .testimonials h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+  .team {
+    position: relative;
+    padding: 100px 50px;
+  }
+  .contact {
+    padding: 50px 50px;
+  }
+  .contact-form .contentBox {
+    padding: 0 50px;
+    width: 100%;
+  }
+  .contact-form .imgBox2 {
+    display: none;
+  }
+  footer {
+    padding: 20px 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main-style.css.map */
